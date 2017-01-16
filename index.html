@@ -4,8 +4,71 @@
 	<title>2.5 Solo Site</title>
 </head>
 <body>
-	<h1>Overview</h1>
-		<p>A few weeks ago a friend and I played with using sausage casings as an art material. The most successful of our experiments and the area we want to explore more is using the casings along with needle felting.</p>
+	<h1>Musings on a Voting System</h1>
+	<h2>Context</h2>
+		<p>I have been thinking lately about alternative implementations of voting systems, and have an idea about one that I want to flesh out and possibly make a website for. It might not be ideal or feasible for national United States elections, but there are a lot of other organizations that have governance structures for which it could be an easy and good drop-in option.</p>
+
+		<h3>Organizations for possible prototyping</h3>
+		<ul>
+			<li>Corporate Shareholders</li>
+			<li>Student Governments</li>
+			<li>Town Hall Meetings</li>
+			<li>Clubs</li>
+			<li>Community Polling Systems</li>
+		</ul>
+
+	<h2>Problem Statement</h2>
+		<p>There is a tension between direct democracy and representative democracy that I think largely boils down to direct democracy is cumbersome and inefficient at large scales and representative democracy is imprecise and subject to gaming. There are many different ways to implement either approach and there are hybrid approaches like California's proposition system where there are two parallel systems. I am interested hybrid systems that do not have two separate processes, but rather a single continuous process that facilitates abstraction of big problems across large populations but also allows for meaningful direct individual action.</p>
+
+	<h2>Sites About Existing Hybrid Systems</h2>
+		<h3>Switzerland</h3>
+
+			<p>The website <i>Democracy Building</i> offers some information on the <a href="http://www.democracy-building.info/switzerlands-political-system.html/">Swiss political system</a>. The site is pretty basic straight up html at about the level that we are currently working with in Phase 0. It does a good job of using elements that are specific to the context (rather than lots of generic divs and spans). That said, the basis layout of the page is one large table with different types of content in different cells, which is not ideal. The page does use a css sheet for styling, but does not define any custom styles, just assigns attributes to the standard ones.</p>
+
+			<img src="swiss_landscape.jpg" alt="Swiss landscape"> <br>
+			Image credit: <a href="https://www.flickr.com/photos/ttiiaann/2525514678/">CandyTian</a>
+
+	<h2>Possible Approach: Designated Direct Democracy</h2>
+		<blockquote> 
+			<p><i>sidenote: I am not the least bit sure about the name. This seems like a plausible way to sum it up.</i></p>
+		</blockquote>
+		
+		<p>The basic idea here is that the system could be set up so that citizens can vote directly on any bill or measure that applies to the country/state/municipality where they live. To get around the inefficiencies of large-scale direct democracy, each person could specifically designate someone else as their representative.</p>
+
+		<p>In order to preserve the directness, the voter could be allowed to override their designee's vote with their own. Essentially this would mean that each person by default supports their designee, but when they have a well informed opinion, they can exercise it. Each ballot would look something like the form below, a group vacation coordination poll, with default values that can be replaced:</p>
+
+		<form action="vote.html" method="post">
+			<fieldset>
+				Name: Ransom Byers <br>
+				Designee: Molly Trombley-McCann <br>
+			</fieldset>
+			<fieldset>
+				<div>
+					<label>General Preference:</label>
+					<select name="vacation_type">
+						<option value="sites">Site Seeing</option>
+						<option value="relax" selected="selected">Relaxation</option>
+						<option value="adventure">Adventure</option>
+					</select>
+				</div>
+				<div>
+					<label>Location:</label>
+					<input type="text" name="location" placeholder="Belize">
+				</div>
+				<div>
+					<label>Mode of Transport</label>
+						<select>
+							<option value="fly">Fly</option>
+							<option value="hitchhike">Hitchike</option>
+							<option value="drive">Drive</option>
+							<option value="train" selected="selected">Ride the Train</option>
+							<option value="sail">Sail</option>
+						</select>
+				</div>
+				<button type="submit">Vote!</button>
+			</fieldset>			
+		</form>		
+
 
 </body>
 </html>
