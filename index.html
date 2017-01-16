@@ -25,13 +25,44 @@
 			<p>Democracy Building offers some information on the <a href="http://www.democracy-building.info/switzerlands-political-system.html/">Swiss political system</a>. The site is pretty basic straight up html at about the level that we are currently working with in Phase 0. It does a good job of using elements that are specific to the context (rather than lots of generic divs and spans). That said, the basis layout of the page is one large table with different types of content in different cells, which is not ideal. The page does use a css sheet for styling, but does not define any custom styles, just assigns attributes to the standard ones.
 
 	<h2>Possible Approach: Designated Direct Democracy</h2>
-		<blockquote>note: I am not the least bit sure about the name. This seems like a plausible way to sum it up.</blockquote>
+		<blockquote> 
+			<p><i>sidenote: I am not the least bit sure about the name. This seems like a plausible way to sum it up.</i></p>
+		</blockquote>
 		
 		<p>The basic idea here is that the system could be set up so that citizens can vote directly on any bill or measure that applies to the country/state/municipality where they live. To get around the inefficiencies of large-scale direct democracy, each person could specifically designate someone else as their representative.</p>
 
-		<p>In order to preserve the directness, the voter could be allowed to override their designee's vote with their own. Essentially this would mean that each person by default supports their designee, but when they have a well informed opinion, they can exercise it. Each ballot would look something like the form below with default values that can be replaced:</p>
+		<p>In order to preserve the directness, the voter could be allowed to override their designee's vote with their own. Essentially this would mean that each person by default supports their designee, but when they have a well informed opinion, they can exercise it. Each ballot would look something like the form below, a group vacation coordination poll, with default values that can be replaced:</p>
 
-		
+		<form action="vote" method="post">
+			<fieldset>
+				Name: Ransom Byers <br>
+				Designee: Molly Trombley-McCann <br>
+			</fieldset>
+			<fieldset>
+				<div>
+					<label>General Preference:</label>
+					<select name="vacation_type">
+						<option value="sites">Site Seeing</option>
+						<option value="relax" selected="selected">Relaxation</option>
+						<option values="adventure">Adventure</option>
+					</select>
+				</div>
+				<div>
+					<label>Location:</label>
+					<input type="text" name="location" placeholder="Belize">
+				</div>
+				<div>
+					<label>Mode of Transport</label>
+						<select>
+							<option value="fly">Fly</option>
+							<option value="hitchhike">Hitchike</option>
+							<option value="drive">Drive</option>
+							<option value="train" selected="selected">Ride the Train</option>
+							<option value="sail">Sail</option>
+						</select>
+				</div>
+			</fieldset>			
+		</form>		
 
 
 </body>
