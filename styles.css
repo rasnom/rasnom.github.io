@@ -1,1 +1,18 @@
-body {background: blue;}
+nav {
+	position: fixed;
+	width: 100%;
+	background: yellow;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 15px;
+}
+
+.active {
+	background: beige;
+}
