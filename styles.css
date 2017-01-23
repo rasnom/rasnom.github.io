@@ -33,10 +33,21 @@ li.featured table {
 }
 
 main {
-	border: 1px pink solid;
+	-webkit-column-width: 250px;
+	-moz-column-width: 250px;
+	column-width: 250px;
+
+	-webkit-column-rule: solid 1px #3d4423;
+	-moz-column-rule: solid 1px #3d4423;
+	column-rule: solid 1px #3d4423;
+
+	background: #daef8d;
 	position: relative;
-	padding-top: 50px;
+	top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	-webkit-column-width: 250px;
+}
+
+header {
+	position: fixed;
 }
