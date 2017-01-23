@@ -50,8 +50,15 @@ main {
 	top: 50px;
 	margin-left: auto;
 	margin-right: auto;
+
+	font-family: Verdana, Geneva, sans-serif ;
 }
 
 header {
 	position: fixed;
+}
+
+#mystery_cult {
+	font-family: "Palatino Linotype", Palatino, serif;
+	color: #870c85;
 }
