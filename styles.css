@@ -62,3 +62,7 @@ header {
 	font-family: "Palatino Linotype", Palatino, serif;
 	color: #870c85;
 }
+
+a:visited {
+	color: crimson;
+}
