@@ -11,8 +11,15 @@ nav ul {
 nav ul li{
 	float: left;
 	margin-right: 15px;
+	margin-bottom: 5px;
 }
 
 .active {
 	background: beige;
 }
+
+li.featured {
+	border: 1px solid black;
+	margin: 5px;
+}
+
