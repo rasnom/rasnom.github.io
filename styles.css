@@ -10,8 +10,8 @@ nav ul {
 
 nav ul li{
 	float: left;
-	margin-right: 15px;
-	margin-bottom: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
 }
 
 .active {
@@ -32,3 +32,11 @@ li.featured table {
 	margin-right: auto;
 }
 
+main {
+	border: 1px pink solid;
+	position: relative;
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-column-width: 250px;
+}
