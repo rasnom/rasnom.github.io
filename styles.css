@@ -10,9 +10,48 @@ nav ul {
 
 nav ul li{
 	float: left;
-	margin-right: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
 }
 
 .active {
 	background: beige;
+}
+
+.drink li, .food li{
+	margin-top: 15px;
+}
+
+li.featured {
+	border: 1px solid black;
+	padding-left: 5px;
+	padding-right: 5px;
+	list-style: none;
+	max-width: 15em;
+}
+
+li.featured table {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main {
+	-webkit-column-width: 250px;
+	-moz-column-width: 250px;
+	column-width: 250px;
+
+	-webkit-column-rule: solid 1px #3d4423;
+	-moz-column-rule: solid 1px #3d4423;
+	column-rule: solid 1px #3d4423;
+
+	background: #daef8d;
+	position: relative;
+	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	position: fixed;
 }
