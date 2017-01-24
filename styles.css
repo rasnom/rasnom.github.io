@@ -23,32 +23,36 @@ nav ul li{
 }
 
 li.featured {
-	border: 1px solid black;
-	padding-left: 5px;
-	padding-right: 5px;
+	background-image: url("media/greek_border.svg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	padding: 10px;
 	list-style: none;
 	max-width: 15em;
 }
 
-li.featured table {
+.featured table {
 	position: relative;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;	
+	margin-top: 20px;
+	padding-bottom:  30px;
+}
+
+.featured table li {
+	margin-top: 30px;
 }
 
 main {
-	-webkit-column-width: 250px;
-	-moz-column-width: 250px;
-	column-width: 250px;
+	-webkit-column-width: 300px;
+	-moz-column-width: 300px;
+	column-width: 300px;
 
 	-webkit-column-rule: solid 1px #3d4423;
 	-moz-column-rule: solid 1px #3d4423;
 	column-rule: solid 1px #3d4423;
 
-	background: #daef8d;
-	position: relative;
-	top: 50px;
-	margin-left: auto;
+	background: #daef8d; position: relative; top: 50px; margin-left: auto;
 	margin-right: auto;
 
 	font-family: Verdana, Geneva, sans-serif ;
